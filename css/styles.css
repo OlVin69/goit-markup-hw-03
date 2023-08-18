@@ -65,8 +65,12 @@ img {
 
 .nav-list {
   display: flex;
-  padding: 24px 0;
+
   gap: 40px;
+}
+
+.nav-item {
+  padding: 24px 0;
 }
 
 .nav-link {
@@ -151,7 +155,16 @@ img {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advantages-list {
